@@ -18,7 +18,7 @@ def main():
     print("2. Hard mode (uses only page links, no categories)")
     mode_choice = input("Enter 1 or 2: ").strip()
     
-    hard_mode = mode_choice == "2"
+    hard_mode = mode_choice == "2" # So if you enter anything that is not "2", it will default to normal mode.
     if hard_mode:
         print("\n🥓 Hard mode enabled! Categories are disabled for more challenging gameplay. 🥓\n")
     else:

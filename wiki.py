@@ -205,7 +205,7 @@ def _find_short_path(start_path: List[str], end_path: List[str], start_time: flo
         
         # Score links and take top candidates
         scored_links = []
-        for link in links[:50]:  # Limit to top 50 links for performance
+        for link in links: 
             try:
                 link_embedding = get_cached_embedding(link)
                 score = cosine_similarity(link_embedding, end_embedding)[0][0]
